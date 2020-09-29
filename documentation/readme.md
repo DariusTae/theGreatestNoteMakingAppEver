@@ -31,10 +31,15 @@ Funtappd is a replica of Untappd that will include features to create a user pro
 
 
 # Routes/Endpoints
-- GET `/` - Root page (Beer cracking open sound clip?...maybe)
-- GET `/login` - Login page
-- POST `/login/create` - Login form submission
-- GET `/user/:username` - User Profile/User Home Page(not sure about this un)
-- GET`/user/:username/settings` - Edit user profile
-- GET `/user/:username/notes` - List of notes user has created
-- GET `/user/notebooks/:id` - ':id' => notebooks page derived from user ID
+- GET `/` - Root page ('Wooonderous')
+- GET `/api/session` - Login page
+- POST `/api/users` - Create User
+- POST `/api/session` - Login form submission
+- POST `/api/notes` - Create Notes
+- POST `/api/notebooks` - Create Notebooks
+- PATCH `/api/notes/noteId` - Update notes
+- GET `/api/users/:userId/notes` - List of notes user has created
+- GET `/api/users/:userId/notebooks` - ':id' => notebooks page derived from user ID
+# Bonus Features
+- GET `/api/users/:userId` - User Profile/User Home Page(not sure about this un)
+- PATCH `/api/users/:userId/settings` - Edit user profile
