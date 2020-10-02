@@ -8,11 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      noteid: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        unique: true
-      },
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false
